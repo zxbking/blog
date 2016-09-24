@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>配置信息.md</title></head>
+<body><table>
+<thead>
+<tr><th>机器</th><th>项目</th></tr></thead>
+<tbody><tr><td>d01</td><td>nginx,node.js</td></tr><tr><td>d02</td><td>app-area-server--tail -f /opt/yunhuni/logs/app-area-server.out,app-third-join-gateway</td></tr><tr><td>d03</td><td>app-portal--tail -f /opt/yunhuni/logs/app-portal.out,app-oc--</td></tr><tr><td>d04</td><td>zookeeper,mq,redis,mysql</td></tr><tr><td>d05</td><td>app-portal-api,app-oc-api,app-site-ap,app-mc-api</td></tr><tr><td>d06</td><td>app-site,app-area-agent</td></tr><tr><td>d07</td><td>app-api-gateway,app-backend-server</td></tr><tr><td></td><td>/opt/yunhuni-peer-internet/bin/update_restart.sh -A app-area-agent -P development -L -I -S</td></tr><tr><td></td><td>/opt/yunhuni-peer-internet/bin/update_restart.sh -A app-area-server -P development -L -I -S</td></tr></tbody>
+</table>
+<table>
+<thead>
+<tr><th>机器</th><th>地址</th><th>账号</th><th>密码</th></tr></thead>
+<tbody><tr><td>dev</td><td>101.200.135.23</td><td>root</td><td></td></tr><tr><td>区域管理器</td><td>192.168.20.100</td><td></td><td></td></tr><tr><td>api gw网关</td><td>192.168.20.102(110 111 112)</td><td></td><td></td></tr><tr><td>area-agent 区域代理</td><td>192.168.20.101</td><td></td><td></td></tr><tr><td>机房</td><td>192.168.20.100</td><td></td><td></td></tr></tbody>
+</table>
+<p></p>
+<p>d01 root 旧密码: S45UFejtfwo2yf 新密码: 8fcvsUJfposdf0</p>
+<p></p>
+<p>/opt/yunhuni-peer-internet/bin/update_restart.sh -A app-area-agent -S -I -L -P test</p>
+<p></p>
+<p></p>
+<p>测试环境外网</p>
+<p>spring.datasource.url = jdbc:mysql://lsxy-db-test.mysql.rds.aliyuncs.com:3306/db_lsxy_base?useUnicode=true&amp;characterEncoding=UTF-8</p>
+<p>spring.datasource.username=bind</p>
+<p>spring.datasource.password=JZEUIBuX001</p>
+</body>
+</html>
